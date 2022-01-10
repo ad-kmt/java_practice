@@ -19,18 +19,18 @@ class Countdown {
 
     private int i;
 
-    public void doCountdown() {
+    public synchronized void doCountdown() {
         String color;
 
         switch(Thread.currentThread().getName()) {
             case "Thread 1":
-                color = com.timbuchalka.ThreadColor.ANSI_CYAN;
+                color = ThreadColor.ANSI_CYAN;
                 break;
             case "Thread 2":
-                color = com.timbuchalka.ThreadColor.ANSI_PURPLE;
+                color = ThreadColor.ANSI_PURPLE;
                 break;
             default:
-                color = com.timbuchalka.ThreadColor.ANSI_GREEN;
+                color = ThreadColor.ANSI_GREEN;
         }
 
         for(i=10; i > 0; i--) {

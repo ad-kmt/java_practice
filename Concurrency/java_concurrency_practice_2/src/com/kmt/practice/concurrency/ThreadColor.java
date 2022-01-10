@@ -1,4 +1,4 @@
-package com.timbuchalka;
+package com.kmt.practice.concurrency;
 
 /**
  * Created by timbuchalka on 15/06/2016.
