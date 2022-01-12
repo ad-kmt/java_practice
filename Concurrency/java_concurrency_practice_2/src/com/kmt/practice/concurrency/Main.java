@@ -33,6 +33,13 @@ class Countdown {
                 color = ThreadColor.ANSI_GREEN;
         }
 
+//        //Synchronizing Block of Statements
+//        synchronized (this){
+//            for(i=10; i > 0; i--) {
+//                System.out.println(color + Thread.currentThread().getName() + ": i =" + i);
+//            }
+//        }
+
         for(i=10; i > 0; i--) {
             System.out.println(color + Thread.currentThread().getName() + ": i =" + i);
         }
